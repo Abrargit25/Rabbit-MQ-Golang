@@ -17,7 +17,7 @@ func replacePlaceholders(message string, data map[string]interface{}) string {
 }
 
 func sendMessage() {
-	remoteHost := "amqp://Gleam:gleamadmin@93.188.162.243:5672/" // Replace with the actual remote host
+	remoteHost := "/" // Replace with the actual remote host
 	conn, err := amqp.Dial(remoteHost)
 	if err != nil {
 		log.Fatal(err)
