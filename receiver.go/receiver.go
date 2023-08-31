@@ -13,7 +13,7 @@ func HelperFunc(err error, msg string) {
 }
 
 func main() {
-	conn, err := amqp.Dial("amqp://Gleam:gleamadmin@93.188.162.243:5672/")
+	conn, err := amqp.Dial("amqp:///")
 	HelperFunc(err, "Failed to connect to RabbitMQ")
 	defer conn.Close()
 
